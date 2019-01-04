@@ -1,0 +1,37 @@
+2019-01-04 10:52:04.465 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Starting NbaApplication on xiaomiPro with PID 16720 (D:\Aworkspace\idea\workspace\nba\target\classes started by 10905 in D:\Aworkspace\idea\workspace\nba)
+2019-01-04 10:52:04.471 - INFO  [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-01-04 10:52:04.534 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-04 10:52:04.534 - INFO  [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-04 10:52:05.030 - INFO  [  restartedMain] epositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-04 10:52:05.088 - INFO  [  restartedMain] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 4 repository interfaces.
+2019-01-04 10:52:05.343 - INFO  [  restartedMain] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d29c6594] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-04 10:52:05.654 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-01-04 10:52:05.663 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-04 10:52:05.670 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-01-04 10:52:05.670 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-04 10:52:05.676 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;D:\Asoftware\package\mysql\bin;C:\Program Files\MongoDB\Server\3.4\bin;D:\Asoftware\package\apache-tomcat-9.0.10\bin;D:\Aworkspace\maven\apache-maven-3.6.0\bin;D:\Asoftware\package\Redis-x64-3.2.100;D:\Asoftware\package\mongodb\bin;D:\Asoftware\java\Git\cmd;C:\Users\10905\AppData\Local\Microsoft\WindowsApps;C:\Users\10905\AppData\Local\GitHubDesktop\bin;.]
+2019-01-04 10:52:05.815 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-01-04 10:52:05.815 - INFO  [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1281 ms
+2019-01-04 10:52:05.928 - INFO  [  restartedMain] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2019-01-04 10:52:06.568 - INFO  [  restartedMain] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2019-01-04 10:52:06.608 - INFO  [  restartedMain] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-04 10:52:06.653 - INFO  [  restartedMain] o.h.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-04 10:52:06.654 - INFO  [  restartedMain] o.h.c.Environment              : HHH000206: hibernate.properties not found
+2019-01-04 10:52:06.748 - INFO  [  restartedMain] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-04 10:52:06.847 - INFO  [  restartedMain] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-04 10:52:07.289 - INFO  [  restartedMain] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-04 10:52:07.672 - INFO  [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-04 10:52:07.699 - WARN  [  restartedMain] uration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-04 10:52:07.753 - WARN  [  restartedMain] o.t.t.TemplateMode             : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-01-04 10:52:07.774 - INFO  [  restartedMain] .w.s.WelcomePageHandlerMapping : Adding welcome page template: index
+2019-01-04 10:52:07.854 - INFO  [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2019-01-04 10:52:07.877 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-01-04 10:52:07.885 - INFO  [  restartedMain] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-01-04 10:52:07.896 - INFO  [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-04 10:52:07.899 - INFO  [  restartedMain] o.s.b.StartupInfoLogger        : Started NbaApplication in 3.68 seconds (JVM running for 5.161)
+2019-01-04 10:52:19.846 - INFO  [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-04 10:52:19.847 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-01-04 10:52:19.856 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
+2019-01-04 10:52:20.647 - INFO  [nio-8080-exec-2] ueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory

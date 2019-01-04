@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>NBA后台数据管理</title>
+    <link rel="shortcut icon" href="../static/images/admin.jpg" th:href="@{/images/admin.jpg}"/>
+    <!--<link rel="stylesheet" href="../static/css/layui.css">-->
+    <link rel="stylesheet" href="../static/css/layui.css" th:href="@{/css/layui.css}">
+</head>
+<body class="layui-layout-body">
+
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">NBA数据管理中心</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">控制台</a></li>
+            <li class="layui-nav-item"><a href="">商品管理</a></li>
+            <li class="layui-nav-item"><a href="">用户</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">其它系统</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">邮件管理</a></dd>
+                    <dd><a href="">消息管理</a></dd>
+                    <dd><a href="">授权管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item" >&nbsp;&nbsp;&nbsp;当前时间:<span id="clock"></span></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="../static/images/admin.jpg" class="layui-nav-img" th:src="@{/images/admin.jpg}">
+                    张晓祥
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">退了</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">数据管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">球员管理</a></dd>
+                        <dd><a href="javascript:;">球队管理</a></dd>
+                        <dd><a href="javascript:;">新闻管理</a></dd>
+                        <dd><a href="">NBA官方周边产品</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">新增用户</a></dd>
+                        <dd><a href="javascript:;">用户数据</a></dd>
+                        <dd><a href="">权限管理</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">球迷频道</a></li>
+                <li class="layui-nav-item"><a href="">彩迷频道</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+
+        <table class="layui-hide" id="demo" lay-filter="test"></table>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+
+
+
+
+
+
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">
+<!--            <table>
+                <tr>
+                    <td>排名</td>
+                    <td>姓名</td>
+                    <td>得分</td>
+                    <td>篮板</td>
+                    <td>助攻</td>
+                </tr>
+                <tr th:each="player:${players}">
+                    <td th:text="${player.id}"></td>
+                    <td th:text="${player.name}"></td>
+                    <td th:text="${player.point}"></td>
+                    <td th:text="${player.team}"></td>
+                    <td th:text="${player.rebound}"></td>
+                    <td th:text="${player.assist}"></td>
+                </tr>
+            </table>-->
+
+        </div>
+    </div>
+
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        Copyright © 2019 zhang. All Rights Reserved.
+    </div>
+</div>
+<script src="../static/layui.js" th:src="@{/layui.js}"></script>
+<!--添加时间-->
+<script type="text/javascript">
+    var attime;
+    function clock(){
+        var time=new Date();
+        attime= time.toLocaleString();
+        document.getElementById("clock").innerHTML = attime;
+    }
+    setInterval(clock,1000);
+</script>
+
+<script src="../static/js/page.js" th:src="@{/js/page.js}"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</html>
